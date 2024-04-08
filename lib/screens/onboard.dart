@@ -1,7 +1,17 @@
+import 'package:blog_club/screens/home.dart';
 import 'package:flutter/material.dart';
 
 class OnBoard extends StatelessWidget {
   const OnBoard({super.key});
+
+  void goHome(BuildContext context) {
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => const HomePage()),
+          (route) => false,
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +78,9 @@ class OnBoard extends StatelessWidget {
                             children: [
                               Image.asset('lib/assets/dot.png'),
                               ElevatedButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  goHome(context);
+                                },
                                 style: ElevatedButton.styleFrom(
                                     padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                                     backgroundColor: Colors.blue,
