@@ -1,3 +1,4 @@
+import 'package:blog_club/screens/auth.dart';
 import 'package:blog_club/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -10,10 +11,11 @@ class OnBoard extends StatefulWidget {
 }
 
 class _OnBoardState extends State<OnBoard> {
-  void goHome(BuildContext context) {
+  // Go to the login page
+  void nextPage(BuildContext context) {
     Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => const HomePage()),
+      MaterialPageRoute(builder: (context) => const AuthPage()),
       (route) => false,
     );
   }
@@ -179,12 +181,8 @@ class _OnBoardState extends State<OnBoard> {
                               ElevatedButton(
                                 onPressed: () {
                                   isLastPage
-                                      ? Navigator.pushAndRemoveUntil(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const HomePage()),
-                                          (route) => false)
+                                      ?
+                                        nextPage(context)
                                       : controller.nextPage(
                                           duration:
                                               const Duration(milliseconds: 500),

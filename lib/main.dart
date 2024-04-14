@@ -1,3 +1,4 @@
+import 'package:blog_club/screens/auth.dart';
 import 'package:blog_club/screens/home.dart';
 import 'package:blog_club/screens/splash_screen.dart';
 import 'package:flutter/material.dart';

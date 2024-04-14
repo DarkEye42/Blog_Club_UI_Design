@@ -3,13 +3,19 @@ class Assets {
   Assets._();
 
   static const String assetsBg = 'lib/assets/bg.png';
-  static const String assetsDOT = 'lib/assets/dot.png';
+  static const String assetsDot = 'lib/assets/dot.png';
+  static const String assetsFacebook = 'lib/assets/facebook.png';
+  static const String assetsGoogle = 'lib/assets/google.png';
   static const String assetsImagetiles = 'lib/assets/imagetiles.png';
   static const String assetsLogo = 'lib/assets/logo.png';
   static const String generatedAssets = 'lib/generated/assets.dart';
   static const String libMain = 'lib/main.dart';
+  static const String screensAuth = 'lib/screens/auth.dart';
   static const String screensHome = 'lib/screens/home.dart';
   static const String screensOnboard = 'lib/screens/onboard.dart';
   static const String screensSplashScreen = 'lib/screens/splash_screen.dart';
+  static const String wigetsCustomButton = 'lib/wigets/customButton.dart';
+  static const String wigetsSquareTile = 'lib/wigets/squareTile.dart';
+  static const String wigetsTextField = 'lib/wigets/textField.dart';
 
 }
