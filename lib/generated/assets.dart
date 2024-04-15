@@ -14,6 +14,8 @@ class Assets {
   static const String screensHome = 'lib/screens/home.dart';
   static const String screensOnboard = 'lib/screens/onboard.dart';
   static const String screensSplashScreen = 'lib/screens/splash_screen.dart';
+  static const String subScreenLoginScreen = 'lib/screens/sub_screen/login_screen.dart';
+  static const String subScreenSignupScreen = 'lib/screens/sub_screen/signup_screen.dart';
   static const String wigetsCustomButton = 'lib/wigets/customButton.dart';
   static const String wigetsSquareTile = 'lib/wigets/squareTile.dart';
   static const String wigetsTextField = 'lib/wigets/textField.dart';
