@@ -48,7 +48,7 @@ class login_screen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const PasswordField(hintText: 'Password'),
+            const PasswordField(hintText: 'Password', icon: Icons.lock,),
             const SizedBox(
               height: 20,
             ),
@@ -58,7 +58,7 @@ class login_screen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                        const HomePage()),
+                        HomePage()),
                   );
                 },
                 buttonName: 'LOGIN',

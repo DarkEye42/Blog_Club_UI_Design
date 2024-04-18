@@ -52,11 +52,11 @@ class signup_screen extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const PasswordField(hintText: 'Password'),
+            const PasswordField(hintText: 'Password', icon: Icons.lock,),
             const SizedBox(
               height: 10,
             ),
-            const PasswordField(hintText: 'Re-Type Password'),
+            const PasswordField(hintText: 'Re-Type Password', icon: Icons.lock,),
             const SizedBox(
               height: 20,
             ),
@@ -66,7 +66,7 @@ class signup_screen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                        const HomePage()),
+                        HomePage()),
                   );
                 },
                 buttonName: 'SIGN UP',

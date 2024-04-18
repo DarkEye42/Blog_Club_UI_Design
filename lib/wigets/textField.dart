@@ -30,7 +30,7 @@ class UsernameField extends StatelessWidget {
         fillColor: Colors.white,
         filled: true,
         labelText: hintText,
-        suffixIcon: Icon(icon, color: Colors.grey),
+        prefixIcon: Icon(icon, color: Colors.grey),
         labelStyle: TextStyle(color: Colors.grey[600], fontWeight: FontWeight.w400),
       ),
     );
@@ -83,7 +83,7 @@ class _EmailFieldState extends State<EmailField> {
         fillColor: Colors.white,
         filled: true,
         labelText: widget.hintText,
-        suffixIcon: Icon(widget.icon, color: Colors.grey),
+        prefixIcon: Icon(widget.icon, color: Colors.grey),
         labelStyle: TextStyle(color: Colors.grey[600], fontWeight: FontWeight.w400),
       ),
     );
@@ -93,11 +93,14 @@ class _EmailFieldState extends State<EmailField> {
 class PasswordField extends StatefulWidget {
   final controller;
   final String hintText;
+  final IconData icon;
 
   const PasswordField({
     this.controller,
     required this.hintText,
+    required this.icon,
     super.key
+
   });
 
   @override
@@ -125,6 +128,7 @@ class _PasswordFieldState extends State<PasswordField> {
         fillColor: Colors.white,
         filled: true,
         labelText: widget.hintText,
+        prefixIcon: Icon(widget.icon, color: Colors.grey),
         suffixIcon: IconButton(
           icon: Icon(
             _obscureText ? Icons.visibility : Icons.visibility_off,

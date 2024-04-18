@@ -1,29 +1,25 @@
-import 'package:blog_club/screens/SecondPage.dart';
 import 'package:blog_club/wigets/customAppBar.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class SecondPage extends StatelessWidget {
+  const SecondPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: CustomAppBar(
-        titleWidget: const Text('Home Page', style: TextStyle(
-          fontSize: 24,
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-        ),),
-        showActionIcon: true, iconColor: Colors.white,
-        showLeading: false,
-        onMenuActionTap: (){
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => const SecondPage()),
-          );
-        },
+      appBar: const CustomAppBar(
+        titleWidget: Text(
+          'Second Page',
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        showActionIcon: true,
+        iconColor: Colors.white,
+        showLeading: true,
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -34,7 +30,7 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Home page',
+                'Second page',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
